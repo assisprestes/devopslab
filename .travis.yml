@@ -16,6 +16,7 @@ install:
 script:                                                                                                                                                                                                  
   - python -m unittest -v test || travis_terminate 1;
 
+
 # Definir o Deploy no Heroku
 deploy:
   provider: heroku
