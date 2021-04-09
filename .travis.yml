@@ -21,9 +21,8 @@ install:
 script:                                                                                                                                                                                                  
   - coverage run test.py || travis_terminate 1;
   - coverage report app.py || travis_terminate 1;
-  - sonar-scanner || travis_terminate 1;
   - coverage xml app.py || travis_terminate 1;
-
+  - sonar-scanner || travis_terminate 1;
 
 # Definir o Deploy no Heroku
 deploy:
