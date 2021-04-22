@@ -32,3 +32,9 @@ deploy:
   app: devopslab-assis
   on:
       branch: main    
+
+
+notifications:
+  slack: devopstoolssede:T69yj14NPT2FY7efE9Ov0hdw
+  on_success: always
+  on_failure: always
