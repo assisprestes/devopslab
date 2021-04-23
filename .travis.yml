@@ -51,7 +51,7 @@ jobs:
           
     - stage: STG Test
       script:
-        - curl https://devopslab-assis.herokuapp.com/ | grep Pipeline || travis_terminate 1;
+        - curl https://devopslab-assis-stg.herokuapp.com/ | grep Pipeline || travis_terminate 1;
           
     - stage: PROD Deploy
       script: skip
